@@ -13,6 +13,7 @@ public class Arryti {
         Arryti ar=new Arryti();
         ar.filAr();
         ar.tpose(ar.tA);
+        ar.mirr(ar.tA);
         
     }
     void filAr(){
@@ -32,12 +33,12 @@ public class Arryti {
         }
     }
     void tpose(int[][] Arr){
-        cpAr(Arr);
+        int[][]cp=cpAr(Arr);
        // System.out.println("displaying temp");
         //Display(tempArr);
         for(int trk=0;trk<4;trk++){
          for(int trk1=0;trk1<4;trk1++)   {
-             Arr[trk][trk1]=cp[trk1][trk];
+             cp[trk1][trk]=Arr[trk][trk1];
              //Display(Arr);
              //System.out.println("trk "+trk+" trk1 "+trk1);
              //Display(tempArr);
@@ -46,17 +47,26 @@ public class Arryti {
          
         }
         //System.out.println("displaying tpose");
-        Display(Arr);
+        Display(cp);
     }
     
-    int[]][] cpAr(int[][] Arr){
+    int[][] cpAr(int[][] Arr){
         int[][] cp=new int[4][4];
         for(int rt=0;rt<4;rt++){
             for(int ct=0;ct<4;ct++){
                 cp[rt][ct]=Arr[rt][ct];
             }
         }
-        
+        return cp;
     }
-    return cp;
+    
+    void mirr(int[][] Arr){
+        int[][]cp=cpAr(Arr);
+        for(int rt=0;rt<4;rt++){
+            for(int ct=0;ct<4;ct++){
+                cp[rt][ct]=Arr[rt][3-ct];
+            }
+        }
+        Display(cp);
+    }
 }

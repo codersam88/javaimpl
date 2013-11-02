@@ -4,6 +4,8 @@
  */
 package javal;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
@@ -36,4 +38,7 @@ public class JavaL {
          System.out.println(Arr[trk]+ " ");
         }
     }
+    
+    //linke for char reader
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 }
