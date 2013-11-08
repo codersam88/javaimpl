@@ -33,10 +33,12 @@ public class JavaL {
         Display(Ar);
     }
     void Display(int[] Arr){
+        System.out.println("Start of Display");
         for(int trk=0;trk<Arr.length;trk++){
          
          System.out.println(Arr[trk]+ " ");
         }
+        System.out.println("End of Display");
     }
     
     //linke for char reader
