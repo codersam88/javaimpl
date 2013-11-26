@@ -22,6 +22,7 @@ public class JavaL {
         JavaL j1=new JavaL();
         j1.tInput();
     }
+    //this is the method for taking input
     void tInput(){
         Scanner s1=new Scanner(System.in);
         System.out.println("start giving input");
@@ -32,6 +33,8 @@ public class JavaL {
         }
         Display(Ar);
     }
+    
+    //this is the method for displaying array
     void Display(int[] Arr){
         System.out.println("Start of Display");
         for(int trk=0;trk<Arr.length;trk++){
