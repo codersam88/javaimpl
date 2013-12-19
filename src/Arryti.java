@@ -34,19 +34,14 @@ public class Arryti {
     }
     void tpose(int[][] Arr){
         int[][]cp=cpAr(Arr);
-       // System.out.println("displaying temp");
-        //Display(tempArr);
         for(int trk=0;trk<4;trk++){
          for(int trk1=0;trk1<4;trk1++)   {
              cp[trk1][trk]=Arr[trk][trk1];
-             //Display(Arr);
-             //System.out.println("trk "+trk+" trk1 "+trk1);
-             //Display(tempArr);
-             //System.out.println("temp now");
+             
          }
          
         }
-        //System.out.println("displaying tpose");
+        
         Display(cp);
     }
     
